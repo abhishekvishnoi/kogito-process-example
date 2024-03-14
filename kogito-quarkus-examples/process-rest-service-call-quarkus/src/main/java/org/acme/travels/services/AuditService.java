@@ -29,6 +29,7 @@ public class AuditService {
     public User auditUser(User user) {
 
         logger.info("User {} is being processed", user.toString());
+     //   System.out.println("User {} is being processed" + user.toString());
 
         return user;
     }

@@ -31,11 +31,14 @@ public class UserService {
     UsersRemoteService usersRemoteService;
 
     @Fallback(fallbackMethod = "missingUser")
-    public User get(String username) {
-        return usersRemoteService.get(username);
+    public User get(String username) {  
+        User user = usersRemoteService.get(username);
+        System.out.println("found user " + user.getFirstName());
+        return user;
     }
 
     public User missingUser(String username) {
+        System.out.println("executing fallback method.!!");
         return null;
     }
 }

@@ -54,10 +54,18 @@
       <artifactId>quarkus-arc</artifactId>
     </dependency>
 
+
+    <!-- Reactive Messaging - Quarkus Kafka extensions & Kogito add-on  -->
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-reactive-messaging-kafka</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.kie.kogito</groupId>
+      <artifactId>kogito-addons-quarkus-messaging</artifactId>
+    </dependency>
+
+
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-openapi</artifactId>

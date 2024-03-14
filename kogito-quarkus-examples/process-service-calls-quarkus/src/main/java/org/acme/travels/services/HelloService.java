@@ -23,7 +23,7 @@ import org.slf4j.LoggerFactory;
 @ApplicationScoped
 public class HelloService {
 
-    private static final Logger logger = LoggerFactory.getLogger(GreetingTravellerService.class);
+    private static final Logger logger = LoggerFactory.getLogger(HelloService.class);
 
     public Object hello(String name, Integer age) {
         logger.info("Saying hello to {} with age {}", name, age);
